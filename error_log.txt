@@ -1,0 +1,33 @@
+I need to confirm that I get G&M's newly-reported results when riding the default settings for subgroups, comparisons, outcomes, time points, etc.
+
+Anderson & Carnagey (2009) has "Average intensity aggression" and "High intensity aggression" entered as separate subgroups; they are instead two outcomes. They should be averaged, not summed.
+
+Arriaga Monteiro & Esteves have two outcome.specific for antisocial behavior and for arousal each. These were summed. I think they should instead be averaged. I will need to check the PDF to be sure.
+
+Ballard, Visser, and Jocoy have three summed outcome.specific for arousal. Again, need to make sure these should not have instead been averaged.
+
+Bluemke, Friedrich, & Zumbach have three summed outcome.specific for antisocial cognition. Again, need to make sure these should not have instead been averaged.
+
+DeLisi et al have four summed outcome.specific for correlational study of antisocial behavior. Again, need to make sure these should not have instead been averaged.
+
+Check what Ewoldsen et al. (2011) means by cooperation-game, direct competition, and indirect competition subgroups. Make sure it is appropriate to sum these subgroups.
+
+Ferguson (2011a) has four summed outcome.specific for longitudinal study of aggressive affect and ten summed outcome.specific for aggressive behavior. Again, need to make sure these should not have instead been averaged.
+
+Ferguson & Garza (2011) has two summed outcome.specific for correlational prosocial behavior. Again, need to make sure these should not have instead been averaged.
+
+Ferguson & Rueda has four summed for antisocial behavior and two summed for antisocial affect. Again, need to make sure these should not have instead been averaged.
+
+Ferguson et al. have two summed for longitudinal antisocial behavior. Again, need to make sure these should not have instead been averaged.
+
+Fraser et al. have three summed for experimental outcomes on prosocial behavior for men and women each. Again, need to make sure these should not have instead been averaged. Check also N per subgroup.
+
+Gabbiadini et al. has two different comparisons listed. Make sure it is appropriate that it takes the mean of these. It also has five outcome.specific for antisocial cognition. Again, need to make sure these should not have instead been averaged.
+
+Gentile et al. have two outcome.specific for antisocial media positive behavior and antisocial media antisocial cognition each. Again, need to make sure these should not have instead been averaged.
+
+Gentile Coyne Walsh (2011) has six for correlational antisocial behavior, three for longitudinal antisocial behavior, two for correlational prosocial behavior, six for correlational antisocial cognition, three for longitudinal antisocial cognition. Again, need to make sure these should not have instead been averaged.
+
+Gunter & Daly have two outcomes for each group. Again, need to make sure these should not have instead been averaged.
+
+I'm too exhausted to list more of these.

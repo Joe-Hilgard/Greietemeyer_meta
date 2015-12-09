@@ -1,0 +1,19 @@
+Column properties are likely to be highly important in determining how outcomes and subgroups are combined within studies.
+
+"Subgroup" is of function "Subgroup within study"
+"Comparison" is of function "Comparison"
+"Outcome (specific)" is of function "Outcome"
+"Time point" is of function "Time point"
+"Outcome Group", "outcome type", "study design", "media type", "Ferguson" are all of function "Moderator"
+
+For multiple rows per study, CMA offers the following options:
+"Use the mean of the selected [foo]"
+"Use all of the selected [foo], assuming independence" "Use the first [foo], based on this sequence." 
+
+See attached screenshots for the options and their selections.
+
+
+
+Subgroups are aggregated across, as study is used as the unit of analysis. This will be a problem if effect sizes reported in subgroups are not independent -- control groups will be double- or triple-counted again.
+
+All outcomes.specific are used, assuming independence. This will be a very serious problem if a study reports two outcomes in the same Outcome / Outcome.type / design / media.type cell.
