@@ -2,6 +2,37 @@ I need to confirm that I get G&M's newly-reported results when riding the defaul
 
 Anderson & Carnagey (2009) has "Average intensity aggression" and "High intensity aggression" entered as separate subgroups; they are instead two outcomes. They should be averaged, not summed.
 
+Check what Ewoldsen et al. (2011) means by cooperation-game, direct competition, and indirect competition subgroups. Make sure it is appropriate to sum these subgroups.
+
+Fraser et al. entered as experimental; the correct coding is "correlational". Confused coding of Outcome.specific "prosocial" vs. Outcome "antisocial".
+
+Gabbiadini et al. has two different comparisons listed. Make sure it is appropriate that it takes the mean of these.
+Gabbiadini et al. is entered as experimental design. It is correlational.
+
+Holtz & Appel is entered as experimental; the correct coding is "correlational".
+
+One or more outcomes of Krcmar & Farrar (2009) is not behavior; they are questionnaire measures of aggressive intentions. This may be more appropriately labeled as "cognition"
+
+Sestir and Bartholow entered as two groups of 90 each. I recall 120.
+
+Thomas & Levant (2012) is not an experiment; it is correlational. Buss-Perry total aggression questionnaire included as "affect", while physical aggression subscale included as "behavior"
+
+Entered effect size of Gentile et al. (2009) study 3 does not account for three-cell design; assumes two cells of n=80 each.
+
+Anderson & Carnagey (2009) "aggravation" is entered as "cognition" rather than "affect"
+
+Hartmann & Vorderer (2010) has all subjects play a game featuring gun violence; it does not compare a violent game against a nonviolent game, and should not be included.
+
+Were changes in "trait aggressiveness" entered from Bluemke et al (2010)? Are these the "Aggressive self-concept?" Why are there two?
+
+In Hasan, Begue, & Bushman (2013), "cardiac coherence" was entered as a measure of aggressive behavior; it should be arousal.
+
+Effects from Engelhardt, Bartholow, Kerr and Bushman (2011) and from Bushman & Gibson (2011) entered as "affect" rather than "behavior".
+
+
+
+
+Outcome.specific duplicates:
 Arriaga Monteiro & Esteves have two outcome.specific for antisocial behavior and for arousal each. These were summed. I think they should instead be averaged. I will need to check the PDF to be sure.
 
 Ballard, Visser, and Jocoy have three summed outcome.specific for arousal. Again, need to make sure these should not have instead been averaged.
@@ -9,8 +40,6 @@ Ballard, Visser, and Jocoy have three summed outcome.specific for arousal. Again
 Bluemke, Friedrich, & Zumbach have three summed outcome.specific for antisocial cognition. Again, need to make sure these should not have instead been averaged.
 
 DeLisi et al have four summed outcome.specific for correlational study of antisocial behavior. Again, need to make sure these should not have instead been averaged.
-
-Check what Ewoldsen et al. (2011) means by cooperation-game, direct competition, and indirect competition subgroups. Make sure it is appropriate to sum these subgroups.
 
 Ferguson (2011a) has four summed outcome.specific for longitudinal study of aggressive affect and ten summed outcome.specific for aggressive behavior. Again, need to make sure these should not have instead been averaged.
 
@@ -30,4 +59,4 @@ Gentile Coyne Walsh (2011) has six for correlational antisocial behavior, three 
 
 Gunter & Daly have two outcomes for each group. Again, need to make sure these should not have instead been averaged.
 
-I'm too exhausted to list more of these.
+

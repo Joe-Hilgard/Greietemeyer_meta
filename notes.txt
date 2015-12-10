@@ -17,3 +17,5 @@ See attached screenshots for the options and their selections.
 Subgroups are aggregated across, as study is used as the unit of analysis. This will be a problem if effect sizes reported in subgroups are not independent -- control groups will be double- or triple-counted again.
 
 All outcomes.specific are used, assuming independence. This will be a very serious problem if a study reports two outcomes in the same Outcome / Outcome.type / design / media.type cell.
+
+Several studies log both T1 and T2, and often Blank, T1, and T2. Not sure how these were handled. Default setting seems to be "Use the first time point, based on this sequence: Blank, T1, T2, T3". I might favor "use the mean"
