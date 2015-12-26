@@ -9,40 +9,31 @@ dat = read_excel("edited_data.xlsx")
 # CRUDE APPROXIMATION: get rough sample size given se(z)
 dat$Sample.size = (1/dat$Std.Err)^2+3
 
-# Check out unique combinations of study, subgroup, outcome.specific, etc.
-# Trying to figure out which setting they used for studies with multiple outcomes.
-  # Using the mean of the selected outcomes would be ideal
-  # Using all selected outcomes, assuming independence, would be extremely bad for studies w/ "count" > 1
-dat %>% 
-  select(Study:Time.point, Outcome:media.type) %>% 
-  group_by(Study, Subgroup, Comparison, Outcome, Outcome.type, design, media.type) %>% 
-  summarize("count" = n()) %>% 
-  View
-
-dat %>% 
-  select(Study:Time.point, Outcome:media.type) %>% 
-  group_by(Study, Subgroup, Comparison, Outcome, Time.point, Outcome.type, design, media.type) %>% 
-  summarize("count" = n()) %>% 
-  View
-
-# check sum of approx. sample sizes
-temp = dat %>% 
-  filter(Outcome == "behavior",
-         media.type == "antisocial",
-         design == "experimental",
-         Outcome.type == "antisocial/negative")
-
-temp %>% 
-  select(Study:Data.format, r:checked.by, Sample.size) %>% 
-  View
-# Export for note-taking
-
-dat %>% 
-  select(Study) %>% 
-  distinct() %>% 
-  write.table("study_notes.txt", sep="\t", row.names=F)
-
 # at face value, no averaging or aggregating
 naive = rma(yi = Fisher.s.Z, sei = Std.Err, data = temp)
 funnel(naive)
 forest(naive)
+
+dat = read_excel("aggregated_datasets/Exp_behavior_antisocial.xlsx")
+# CRUDE APPROXIMATION: get rough sample size given se(z)
+dat$Fishers.Z = atanh(dat$Correlation)
+dat$Std.Err.Z = (dat$Fishers.Z - .5*log((1+dat$`Lower Limit`)/(1-dat$`Lower Limit`)))/1.96
+dat$Sample.size = (1/dat$Std.Err)^2+3
+
+# plot
+aggbeh1 = rma(yi = Fishers.Z, sei = Std.Err.Z, data = dat)
+funnel(aggbeh1)
+summary(aggbeh1)
+
+aggbeh2 = rma(yi = Fishers.Z, sei = Std.Err.Z, data = dat,
+              subset = Design == "Exp")
+funnel(aggbeh2)
+summary(aggbeh2)
+
+# If i wanted to be mean I could look at 1 experimenter vs. rest
+dat$Greitemeyer = grepl("Greitemeyer", dat$Study)
+aggbeh_greitemeyer = rma(yi = Fishers.Z, sei = Std.Err.Z, data = dat,
+                         mods = ~Greitemeyer,
+                         subset = Design == "Exp")
+funnel(aggbeh_greitemeyer, pch = ifelse(dat$Greitemeyer, 16, 1))
+summary(aggbeh_greitemeyer)

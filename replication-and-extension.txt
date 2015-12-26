@@ -67,6 +67,29 @@ random-effect trim-fill: 3 imputed studies, r = .144 [.112, .177]
 classic fail-safe N: 388
 Orwin's fail-safe N: 12 to bring to under r = .1
 
+==============
+
+Study design: Experimental
+Media type: Antisocial
+Outcome Type: Antisocial
+Outcome Group: Behavior
+
+Settings:
+Subgroups: Use study as the unit of analysis
+Comparisons: All included, use the mean of selected comparisons
+Outcomes: Use the mean of the selected outcomes
+Timepoints: Use the first time point based on this sequence: blank, t1, t2, t3
+Media type: Antisocial
+Study design: Experimental
+
+Fixed Effects Result:
+Random Effects Result: 
+observed studies
+fixed-effect trim-fill: 
+random-effect trim-fill: 
+classic fail-safe N: 
+Orwin's fail-safe N: to bring to under r = .1
+
 
 ==============
 
