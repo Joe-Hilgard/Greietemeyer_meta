@@ -1,4 +1,6 @@
-source("table_managing_functions.R")
+# Fix individual datapoints
+# Note that this now doesn't work because ID got lost in aggregation...
+# Is it better to fix before or after aggregation?
 
 dat = read.delim("GM_2014_averaged_summed.txt", stringsAsFactors=F)
 dat.old = read.delim("GM2014_full_raw_data.txt", stringsAsFactors=F)

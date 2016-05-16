@@ -30,7 +30,8 @@ dat1 = dat %>%
   select(ID, StudyShort, Study, Subgroup, Comparison, Outcome, Time.point, 
          Fisher.s.Z, Std.Err, Sample.size,
          Outcome, Outcome.type, design, media.type, Ferguson, Citation) %>% 
-  group_by(Study, StudyShort, Outcome, Time.point, Outcome.type, design, Subgroup, Comparison) %>% 
+  group_by(Study, StudyShort, Outcome, Time.point, Outcome.type, design, Ferguson, Citation,
+           Subgroup, Comparison) %>% 
   summarise(Fisher.s.Z = mean(Fisher.s.Z), # Should this be weighted by Std.Err, in case of wiggly dfs?
             Std.Err = mean(Std.Err),
             Sample.size = mean(Sample.size))
