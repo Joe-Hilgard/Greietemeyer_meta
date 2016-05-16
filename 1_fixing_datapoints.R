@@ -2,12 +2,21 @@
 # Note that this now doesn't work because ID got lost in aggregation...
 # Is it better to fix before or after aggregation?
 
+source("table_managing_functions.R")
+library(readxl)
+library(dplyr)
+
 dat = read.delim("GM_2014_averaged_summed.txt", stringsAsFactors=F)
-dat.old = read.delim("GM2014_full_raw_data.txt", stringsAsFactors=F)
-# Fix dat.old formatting
-names(dat.old)[c(1,8,10)] = c("ID", "Std.Err.r", "Std.Err")
-dat.old = dat.old[,c(2:16, 1)]
-dat.old$StudyShort = NA; dat.old$Sample.size = NA 
+dat.old = read_excel("GM_2015-11-10.xlsx")
+# drop empty rows and make ID column
+dat.old = filter(dat.old, !is.na(Study))
+dat.old$ID = 1:nrow(dat.old)
+# # Fix dat.old formatting
+# dat.old = dat.old %>% 
+#   rename()
+# names(dat.old)[c(1,8,10)] = c("ID", "Std.Err.r", "Std.Err")
+# dat.old = dat.old[,c(2:16, 1)]
+# dat.old$StudyShort = NA; dat.old$Sample.size = NA 
 
 # Issues to fix:
 

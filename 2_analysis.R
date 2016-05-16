@@ -10,7 +10,7 @@ dat = read_excel("edited_data.xlsx")
 dat$Sample.size = (1/dat$Std.Err)^2+3
 
 # at face value, no averaging or aggregating
-naive = rma(yi = Fisher.s.Z, sei = Std.Err, data = temp)
+naive = rma(yi = Fisher.s.Z, sei = Std.Err, data = dat)
 funnel(naive)
 forest(naive)
 

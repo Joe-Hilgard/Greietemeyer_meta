@@ -1,0 +1,118 @@
+Study design: Experimental
+Media type: Antisocial
+Outcome Type: Antisocial
+
+Settings:
+Subgroups: Use study as the unit of analysis
+Comparisons: All included, use the mean of selected comparisons
+Outcomes: Use all of the selected outcomes, assuming independence
+Timepoints: Use the first time point based on this sequence: blank, t1, t2, t3
+Media type: Antisocial
+Study design: Experimental
+
+Fixed Effects Result: r = .175, [.160, .190], z = 10.264
+Random Effects Result: r = .191, [.155, .226], z = 22.757
+56 observed studies
+4 imputed studies
+classic fail-safe N: 6273
+Orwin's fail-safe N: 43 to bring to under r = .1
+
+========================================
+
+Study design: Experimental
+Media type: Antisocial
+Outcome Type: Antisocial
+
+Settings:
+Subgroups: Use study as the unit of analysis
+Comparisons: All included, use the mean of selected comparisons
+Outcomes: Use the mean of the selected outcomes
+Timepoints: Use the first time point based on this sequence: blank, t1, t2, t3
+Media type: Antisocial
+Study design: Experimental
+
+Fixed Effects Result: r = .173, [.151, .196], z = 14.786
+Random Effects Result: r = .187, [.149, 225], z = 9.358
+56 observed studies
+fixed-effect trim-fill: 4 imputed studies, r = .152 [.130, .174]
+random-effect trim-fill: 0
+classic fail-safe N: 3096
+Orwin's fail-safe N: 42 to bring to under r = .1
+
+Exported combined data to Exp_antisocial.xlsx
+(Wouldn't it be nice to know formulae for how CMA aggregates rows?)
+
+========================================
+
+Breaking the above out by Outcome Group (affect, behavior, cognition):
+
+Study design: Experimental
+Media type: Antisocial
+Outcome Type: Antisocial
+Outcome Group: Affect
+
+Settings:
+Subgroups: Use study as the unit of analysis
+Comparisons: All included, use the mean of selected comparisons
+Outcomes: Use the mean of the selected outcomes
+Timepoints: Use the first time point based on this sequence: blank, t1, t2, t3
+Media type: Antisocial
+Study design: Experimental
+
+Fixed Effects Result: r = .156, [.122, .189], z = 9.006
+Random Effects Result: r = .163, [.119, 206], z = 7.148
+21 observed studies
+fixed-effect trim-fill: 3 imputed studies, r = .144 [.111, .177]
+random-effect trim-fill: 3 imputed studies, r = .144 [.112, .177]
+classic fail-safe N: 388
+Orwin's fail-safe N: 12 to bring to under r = .1
+
+==============
+
+Study design: Experimental
+Media type: Antisocial
+Outcome Type: Antisocial
+Outcome Group: Behavior
+
+Settings:
+Subgroups: Use study as the unit of analysis
+Comparisons: All included, use the mean of selected comparisons
+Outcomes: Use the mean of the selected outcomes
+Timepoints: Use the first time point based on this sequence: blank, t1, t2, t3
+Media type: Antisocial
+Study design: Experimental
+
+Fixed Effects Result:
+Random Effects Result: 
+observed studies
+fixed-effect trim-fill: 
+random-effect trim-fill: 
+classic fail-safe N: 
+Orwin's fail-safe N: to bring to under r = .1
+
+
+==============
+
+Study design: Experimental
+Media type: Antisocial
+Outcome Type: Antisocial
+Outcome Group: Cognition
+
+Settings:
+Subgroups: Use study as the unit of analysis
+Comparisons: All included, use the mean of selected comparisons
+Outcomes: Use the mean of the selected outcomes
+Timepoints: Use the first time point based on this sequence: blank, t1, t2, t3
+Media type: Antisocial
+Study design: Experimental
+
+Fixed Effects Result: r = .230 [.192, .267], z = 11.497
+Random Effects Result: r = .245 [.157, .329], z = 5.37
+19 observed studies
+fixed-effect trim-fill: 0 imputed
+random-effect trim-fill: 0 imputed 
+
+classic fail-safe N: 640
+Orwin's fail-safe N: 26 to bring to under r = .1
+
+=================
