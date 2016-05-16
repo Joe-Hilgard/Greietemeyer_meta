@@ -22,7 +22,7 @@ dat$StudyShort = paste(substr(dat$Study, 1, 8),
                        substr(dat$Study, nchar(dat$Study)-9, nchar(dat$Study)),
                        sep="_")
 # Get apparent N given reported std.err of z
-dat$Sample.size = (1/dat$Std.Err.1)^2+3
+dat$Sample.size = (1/dat$Std.Err)^2+3
 
 # Each outcome from each study should be just one point. 
 # Then I'd like to break it up by Outcome for PETPEESE (outcome.group)
@@ -109,3 +109,6 @@ for (i in unique(tooManyDat$Study)) {
 }
 }
 write.table(dat, "GM_2014_averaged_summed.txt", sep="\t", row.names=F)
+
+
+
