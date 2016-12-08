@@ -4,7 +4,7 @@
 
 source("table_managing_functions.R")
 library(readxl)
-library(dplyr)
+library(tidyverse)
 
 dat = read.delim("GM_2014_averaged_summed.txt", stringsAsFactors=F)
 dat.old = read_excel("GM_2015-11-10.xlsx")
