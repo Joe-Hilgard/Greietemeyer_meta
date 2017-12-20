@@ -35,8 +35,9 @@ temp = dat %>%
 temp %>% 
   select(Study:Data.format, r:checked.by, Sample.size) %>% 
   View
-# Export for note-taking
+# Many of these I'm not sure qualify as "aggressive behavior"
 
+# Export for note-taking
 dat %>% 
   select(Study) %>% 
   distinct() %>% 
@@ -45,4 +46,7 @@ dat %>%
 # at face value, no averaging or aggregating
 naive = rma(yi = Fisher.s.Z, sei = Std.Err, data = temp)
 funnel(naive)
-forest(naive)
+funnel(naive, refline = 0)
+forest(cumul(naive))
+
+
