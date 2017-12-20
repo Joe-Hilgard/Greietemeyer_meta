@@ -12,10 +12,15 @@ For multiple rows per study, CMA offers the following options:
 
 See attached screenshots for the options and their selections.
 
+On 12/24/15, I reproduced their results in a trial version of CMA. Per my email to Brent Roberts, I found that the options selected were:
+Subgroups: Use study as the unit of analysis
+Comparisons: Use the mean of selected comparisons
+Outcomes: Use the mean of selected comparisons
 
+Subgroups:
+As subgroups are used as the unit of analysis, subgroups are summed across, treated as independent. This will be a problem if effect sizes reported in subgroups are not independent -- control groups will be double- or triple-counted again.
 
-Subgroups are aggregated across, as study is used as the unit of analysis. This will be a problem if effect sizes reported in subgroups are not independent -- control groups will be double- or triple-counted again.
+Comparisons and outcomes are less likely to be an issue, as the analysis uses the mean of selected comparisons. This assumes that the effect sizes are dependent and should be appropriately conservative.
 
-All outcomes.specific are used, assuming independence. This will be a very serious problem if a study reports two outcomes in the same Outcome / Outcome.type / design / media.type cell.
-
+With regard to timepoint, I'm not sure.
 Several studies log both T1 and T2, and often Blank, T1, and T2. Not sure how these were handled. Default setting seems to be "Use the first time point, based on this sequence: Blank, T1, T2, T3". I might favor "use the mean"
